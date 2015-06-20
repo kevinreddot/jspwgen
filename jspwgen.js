@@ -819,29 +819,3 @@ function koremutakePwGen () {
   }
   return pwd;
 }
-
-function classicPwGen () {
-/*
-Password generation using classic algorithm
-*/
-var i;
-var pwd = "";
-
-for (i=0; i <= 8; i++) {
-
-}
-return "Jdm8J42%";
-}
-
-function dicePwGen () {
-/*
-Password generation using diceware: http://world.std.com/~reinhold/diceware.html
-*/
-return "cleft cam synod lacy yr wok";
-}
-
-var pwGenAlgs = [
-function () { document.write("<div style=\"color: red;\">" + koremutakePwGen() + "</div>");  },
-function () { document.write("<div style=\"color: green;\">" + classicPwGen() + "</div>") },
-function () { document.write("<div style=\"color: blue;\">" + dicePwGen() + "</div>") }
-];
